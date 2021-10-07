@@ -6,8 +6,8 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
     $jsonData=json_decode($data);
     $Medicion=$jsonData->{'Medicion'};;
     
-    $query="INSERT INTO datos (Medicion) VALUES('".$Medicion."')";
-$resultado=$mysql->query($query);
+    $query="INSERT INTO tabla (Medicion) VALUES('".$Medicion."')";
+$resultado=$conn->query($query);
 if($resultado==true){
     echo "Los datos se introducen de forma correcta";
 }else{
