@@ -11,6 +11,8 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
     $Minor=$jsonData->{'Minor'};
     
     //$query="INSERT INTO tabla (Medicion) VALUES('".$Medicion."')";
+    
+    // Para insertar datos en la bbdd
     $query="INSERT INTO tabla(Medicion, Latitud, Longitud, Major, Minor) VALUES ('".$Medicion."','".$Latitud."','".$Longitud."', '".$Major."', '".$Minor."')";
     
     $resultado=$conn->query($query);
