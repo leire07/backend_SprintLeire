@@ -1,0 +1,3 @@
+1. Hay que arrancar un servidor con xampp. Hay que introducir la carpeta con el proyecto en la carpeta htdocs de xampp.
+
+Aquí se encuentran los archivos php que la app utiliza para conectar, enviar y recibir datos con la bbdd.
